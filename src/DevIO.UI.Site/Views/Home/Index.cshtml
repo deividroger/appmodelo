@@ -1,0 +1,6 @@
+﻿@using  DevIO.UI.Site.Data;
+@inject IPedidoRepository PedidoRepository
+@*Não é recomendável usar esse tipo de injeção de dependencia*@
+<h1>Olá</h1>
+
+@PedidoRepository.ObterPedido().Id;
